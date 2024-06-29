@@ -1,6 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using Mini_MarketX.Data.Context;
+using Mini_MarketX.Data.Interfaces;
+using Mini_MarketX.Data.Repositories.Mocks;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddDbContext<ReportesContext>(options => options.UseInMemoryDatabase("ReporteInventario"));
+builder.Services.AddScoped<IReporteRepository, MockReporteRepository>();
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
@@ -25,3 +35,4 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
