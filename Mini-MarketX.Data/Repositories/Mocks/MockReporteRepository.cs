@@ -2,14 +2,13 @@
 using Mini_MarketX.Data.Entities;
 using Mini_MarketX.Data.Exceptions;
 using Mini_MarketX.Data.Interfaces;
-
 namespace Mini_MarketX.Data.Repositories.Mocks
 {
     public class MockReporteRepository : IReporteRepository
     {
-        private readonly ReportesContext context;
+        private readonly Mini_MarketXContext context;
 
-        public MockReporteRepository(ReportesContext context) 
+        public MockReporteRepository(Mini_MarketXContext context) 
         {
             this.context = context;
             this.CargarDatos();

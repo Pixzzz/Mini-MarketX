@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddDbContext<ReportesContext>(options => options.UseInMemoryDatabase("ReporteInventario"));
+builder.Services.AddDbContext<Mini_MarketXContext>(options => options.UseInMemoryDatabase("MiniMarketXDB"));
 builder.Services.AddScoped<IReporteRepository, MockReporteRepository>();
 
 builder.Services.AddControllersWithViews();
