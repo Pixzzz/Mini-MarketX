@@ -4,29 +4,29 @@ using Mini_MarketX.Data.Interfaces;
 
 namespace Mini_MarketX.Data.Repositories.Db
 {
-    internal class ReporteRepository : IReporteRepository
+    public class ProductoMMXRepository : IProductoMMXRepository
     {
-        public void Actualizar(Reporte reporte)
+        public void Actualizar(Producto producto)
         {
             throw new NotImplementedException();
         }
 
-        public void Agregar(Reporte reporte)
+        public void Agregar(Producto producto)
         {
             throw new NotImplementedException();
         }
 
-        public Reporte ObtenerPorId(int reporteId)
+        public void Eliminar(Producto producto)
         {
             throw new NotImplementedException();
         }
 
-        public void Remover(Reporte reporte)
+        public Producto ObtenerporId(int ProductoId)
         {
             throw new NotImplementedException();
         }
 
-        public List<Reporte> TraerTodos()
+        public List<Producto> TraerTodos()
         {
             throw new NotImplementedException();
         }
