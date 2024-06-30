@@ -24,6 +24,7 @@ namespace Mini_MarketX.Data.Context
         //    base.OnConfiguring(optionsBuilder);
         //}
 
+        public DbSet<Reporte>? Reportes { get; set; }
         public DbSet<Producto>? Productos { get; set; }
     }
 }

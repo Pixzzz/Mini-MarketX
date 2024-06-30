@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<Mini_MarketXContext>(options => options.UseInMemoryDatabase("MiniMarketXDB"));
 
 builder.Services.AddScoped<IProductoMMXRepository, MockProductoMMXRepository>();
+builder.Services.AddScoped<IReporteRepository, MockReporteRepository>();
 
 builder.Services.AddControllersWithViews();
 
