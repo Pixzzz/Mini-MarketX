@@ -4,7 +4,7 @@ using Mini_MarketX.Web.Models;
 
 namespace Mini_MarketX.Web.Controllers
 {
-    public class AccountController1 : Controller
+    public class AccountController : Controller
     {
         [HttpGet]
         public IActionResult Register()
@@ -17,7 +17,7 @@ namespace Mini_MarketX.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-               
+
                 TempData["SuccessMessage"] = "Registro exitoso";
                 return RedirectToAction("Index", "Home");
             }
