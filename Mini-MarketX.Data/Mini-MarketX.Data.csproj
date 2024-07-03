@@ -15,4 +15,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Repositories\Db\" />
+    <Folder Include="Repositories\Mocks\" />
+  </ItemGroup>
+
 </Project>
