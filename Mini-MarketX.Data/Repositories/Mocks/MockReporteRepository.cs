@@ -8,7 +8,7 @@ namespace Mini_MarketX.Data.Repositories.Mocks
     {
         private readonly Mini_MarketXContext context;
 
-        public MockReporteRepository(Mini_MarketXContext context) 
+        public MockReporteRepository(Mini_MarketXContext context)
         {
             this.context = context;
             this.CargarDatos();
