@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Mini_MarketX.Data.Exceptions
 {
-    public class CorreoEnUsoException : Exception
+    public class UsuarioInactivoException :Exception
     {
-        public CorreoEnUsoException(string message) : base(message) { }
+        public UsuarioInactivoException(string message) : base(message) { }
     }
 }

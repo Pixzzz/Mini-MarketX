@@ -1,4 +1,9 @@
+using Mini_MarketX.Data.Interfaces;
+using Mini_MarketX.Data.Repositories.Db;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
