@@ -45,6 +45,10 @@ namespace Mini_MarketX.Data.Repositories.Mocks
             if (ExisteProducto(producto.ProductoId, producto.Nombre))
                 throw new ProductoDuplicadoException($"Este producto {producto.ProductoId} para este MiniMarket: {producto.Nombre} se encuentra registrado");
 
+           
+
+
+
             Producto ProductoToAdd = new Producto()
             {
                 ProductoId = producto.ProductoId,
@@ -69,6 +73,11 @@ namespace Mini_MarketX.Data.Repositories.Mocks
 
             this.context?.Productos?.Remove(productoToRemove);
             this.context?.SaveChanges();
+        }
+
+        public void EliminarDatos(List<Producto> productos)
+        {
+            throw new NotImplementedException();
         }
 
         public Producto ObtenerporId(int ProductoId)
