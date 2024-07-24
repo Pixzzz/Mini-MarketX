@@ -5,6 +5,8 @@ using Mini_MarketX.Data.Repositories.Mocks;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+
 // Add services to the container.
 builder.Services.AddDbContext<Mini_MarketXContext>(options => options.UseInMemoryDatabase("MiniMarketXDB"));
 

@@ -31,5 +31,6 @@ namespace Mini_MarketX.Data.Context
 
         public DbSet<Reporte>? Reportes { get; set; }
         public DbSet<Producto>? Productos { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
