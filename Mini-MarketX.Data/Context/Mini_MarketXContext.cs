@@ -16,16 +16,21 @@ namespace Mini_MarketX.Data.Context
 
         }
 
+        public Mini_MarketXContext()
+        {
+
+        }
+
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-           optionsBuilder.UseInMemoryDatabase("MiniMarketXDB");
+            optionsBuilder.UseInMemoryDatabase("MiniMarketXDB");
             base.OnConfiguring(optionsBuilder);
         }
 
-        //public DbSet<Reporte>? Reportes { get; set; }
-        //public DbSet<Producto>? Productos { get; set; }
+        public DbSet<Reporte>? Reportes { get; set; }
+        public DbSet<Producto>? Productos { get; set; }
         public DbSet<User> Users { get; set; }
     }
 }

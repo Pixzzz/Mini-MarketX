@@ -3,6 +3,7 @@ using Mini_MarketX.Data.Entities;
 using Mini_MarketX.Data.Interfaces;
 using Mini_MarketX.Web.Models;
 
+
 namespace Mini_MarketX.Web.Controllers
 {
     public class AccountController : Controller
@@ -44,7 +45,7 @@ namespace Mini_MarketX.Web.Controllers
 
                 // Agregar el nuevo usuario al repositorio
                 _userRepository.Add(user);
-
+               
                 TempData["SuccessMessage"] = "Registro exitoso";
                 return RedirectToAction("Index", "Home");
             }
