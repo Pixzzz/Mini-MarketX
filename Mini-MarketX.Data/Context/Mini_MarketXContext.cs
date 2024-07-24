@@ -18,8 +18,9 @@ namespace Mini_MarketX.Data.Context
 
         public Mini_MarketXContext()
         {
-            
+
         }
+
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

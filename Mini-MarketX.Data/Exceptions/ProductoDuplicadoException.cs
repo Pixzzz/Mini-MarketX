@@ -7,4 +7,5 @@ namespace Mini_MarketX.Data.Exceptions
         public ProductoDuplicadoException(string message) : base(message) { }
 
     }
+
 }
