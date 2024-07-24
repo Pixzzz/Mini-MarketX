@@ -9,7 +9,7 @@ using Mini_MarketX.Data.Exceptions;
 
 namespace Mini_MarketX.Test
 {
-    public class UnitTest1
+    public class UnitTestUsers
     {
         [Fact]
         public void Update_Throws_UsuarioNoEncontradoException_When_User_Is_Null()
