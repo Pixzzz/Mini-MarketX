@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Mini_MarketX.Data.Context;
 using Mini_MarketX.Data.Interfaces;
+using Mini_MarketX.Data.Repositories.Db;
 using Mini_MarketX.Data.Repositories.Mocks;
 
 var builder = WebApplication.CreateBuilder(args);
